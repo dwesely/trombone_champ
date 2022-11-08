@@ -6,17 +6,6 @@ This is a simplified version of [my QT PY controller](https://github.com/dwesely
 
 ## Operation
 
-### Select precision
-The 3-way switch specifies the precision when the device is plugged in. If the switch is in the middle position, the timing budget is set to 30ms. If the switch is set to one of the other positions, the timing budget will be set according to the table below. Blinks indicate which position was read.
-
-The setting is only read once. To adjust the setting, unplug the device and plug it back in.
-
-| Switch position | Timing Budget | Visual Indicator |
-| ------------- | ------------- | ------------- |
-| Left  | 20ms  | 2 blinks |
-| Middle  | 30ms  | 3 blinks |
-| Right  | 40ms  | 4 blinks |
-
 ### Select mode
 
 3-way switch allows orientation to be inverted, or to disable the mouse emulation (so it doesn't interfere with operation outside the game).
@@ -33,6 +22,9 @@ The momentary switch clicks the left mouse button, activating toot.
 ### Scaling Factor
 
 The scaling factor is hard-coded. This value makes the maximum detected distance higher or lower. This is used to make operation more comfortable for people with different sizes of arms.
+
+### Precision
+Precision is hard-coded with a timing budget of 30ms.
 
 ## Other features 
 
